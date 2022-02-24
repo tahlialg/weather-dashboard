@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>Weather Dashboard</header>
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <form id="form-search">
+            <!--search bar-->
+            <label for="input-city">Search</label>
+            <input type="input-city" type="text" />
+            <button id="btn-submit" type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="col-9">
+          Weather Details
+          <div class="row">
+            <div class="col">
+              <h1>Current weather in <span id="span-city"></span></h1>
+              <h2>Date today: <span id="span-date"></span></h2>
+              <p>Temp: <span id="span-current-temp"></span></p>
+              <p>Wind: <span id="span-current-wind"></span></p>
+              <p>Humidity: <span id="span-current-humidity"></span></p>
+              <p>UV: <span id="span-current-uv"></span></p>
+            </div>
+          </div>
+          <div class="row">
+            <!--weather cards-->
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- link jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link moment.js-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- link JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
